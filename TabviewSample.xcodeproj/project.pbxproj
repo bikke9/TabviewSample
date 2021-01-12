@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514116C225ADD04F003E9588 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514116C125ADD04F003E9588 /* HomeView.swift */; };
+		514116C525ADE1B0003E9588 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514116C425ADE1B0003E9588 /* ListView.swift */; };
 		51F0DC3525A8A10B00110646 /* TabviewSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0DC3425A8A10B00110646 /* TabviewSampleApp.swift */; };
 		51F0DC3725A8A10B00110646 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F0DC3625A8A10B00110646 /* ContentView.swift */; };
 		51F0DC3925A8A10D00110646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F0DC3825A8A10D00110646 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		514116C125ADD04F003E9588 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		514116C425ADE1B0003E9588 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		51F0DC3125A8A10B00110646 /* TabviewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabviewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F0DC3425A8A10B00110646 /* TabviewSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabviewSampleApp.swift; sourceTree = "<group>"; };
 		51F0DC3625A8A10B00110646 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		51F0DC3325A8A10B00110646 /* TabviewSample */ = {
 			isa = PBXGroup;
 			children = (
+				514116C125ADD04F003E9588 /* HomeView.swift */,
+				514116C425ADE1B0003E9588 /* ListView.swift */,
 				51F0DC4425A9ABE100110646 /* Tab.swift */,
 				51F0DC3425A8A10B00110646 /* TabviewSampleApp.swift */,
 				51F0DC3625A8A10B00110646 /* ContentView.swift */,
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51F0DC4525A9ABE100110646 /* Tab.swift in Sources */,
+				514116C225ADD04F003E9588 /* HomeView.swift in Sources */,
+				514116C525ADE1B0003E9588 /* ListView.swift in Sources */,
 				51F0DC3725A8A10B00110646 /* ContentView.swift in Sources */,
 				51F0DC3525A8A10B00110646 /* TabviewSampleApp.swift in Sources */,
 			);
