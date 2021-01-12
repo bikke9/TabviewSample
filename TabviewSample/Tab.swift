@@ -12,18 +12,22 @@ struct Tab: View {
     
     @State private var homeIsActive = false
     
+    @StateObject private var listScrollAction = ListScrollAction()
+    
     var body: some View {
         let selectable = Binding(
             get: {
                 self.selection
             }, set: {
-                self.selection = $0
-                
-                switch self.selection {
-                case .home:
-                    self.homeIsActive = false
-                default:
-                    break
+                if $0 == self.selection {
+                    switch $0 {
+                    case .home:
+                        self.homeIsActive = false
+                    case .list:
+                        self.listScrollAction.action = .top
+                    }
+                } else {
+                    self.selection = $0
                 }
             })
         
@@ -32,7 +36,7 @@ struct Tab: View {
                 .tabItem { Image(systemName: "house") }
                 .tag(TabSelection.home)
             
-            Text("List")
+            ListView(scrollAction: listScrollAction)
                 .tabItem { Image(systemName: "list.bullet") }
                 .tag(TabSelection.list)
         }
