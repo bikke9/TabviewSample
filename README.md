@@ -8,7 +8,7 @@ SwiftUI の TabView のサンプル
 
 ### ホームタブ
 
-NavigationLink の isActive を false にして子 View から親 View に戻る。
+`NavigationLink` の子 View から親 View に戻る。
 
 ### リストタブ
 
